@@ -14,6 +14,11 @@ module Data.Nat
   , N5
   , N6
   , N7
+    -- Constant Values
+  , n0
+  , n1
+  , n2
+  , n3
   ) where
 
 import Data.Kind (Type)
@@ -33,3 +38,14 @@ type N5 = 'Succ N4
 type N6 = 'Succ N5
 type N7 = 'Succ N6
 
+n0 :: SingNat N0
+n0 = SingZero
+
+n1 :: SingNat N1
+n1 = SingSucc n0
+
+n2 :: SingNat N2
+n2 = SingSucc n1
+
+n3 :: SingNat N3
+n3 = SingSucc n2

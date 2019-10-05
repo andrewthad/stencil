@@ -18,3 +18,4 @@ library
     Data.Bin.Fin.N0
     Data.Bin.Fin.N1
     Data.Bin.Fin.N2
+    Data.Bin.Fin.N3
